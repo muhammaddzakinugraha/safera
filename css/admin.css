@@ -1,0 +1,23 @@
+footer {
+    background-color: #ffffff; /* Latar belakang putih */
+    text-align: center; /* Teks di tengah */
+    padding: 10px 0; /* Ruang atas dan bawah */
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Efek shadow di atas footer */
+  }
+  
+  footer a {
+    color: #007bff; /* Warna biru untuk teks hyperlink */
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-weight: bold; /* Teks tebal */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Garis bawah saat di-hover */
+  }
+  
+  footer p {
+    margin: 0; /* Hilangkan margin default */
+    font-size: 14px; /* Ukuran font */
+    color: #333333; /* Warna teks abu gelap */
+  }
+  

@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.navbar,
+.navbar-brand,
+.navbar-nav .nav-link {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.btn-logout {
+  color: #ffffff; /* Warna teks putih */
+  font-weight: 700; /* Tebal yang sesuai dengan navbar lain */
+  font-family: "Montserrat"; /* Pastikan font konsisten */
+}
+
+.div {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+/* Navbar Transparent */
+.navbar {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Transparan dengan sedikit warna gelap */
+  transition: background-color 0.3s;
+}
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+  color: #fff;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Mengubah jadi hitam saat scroll */
+}
+.navbar-dark .nav-link:hover {
+  color: #ccc;
+}
+
+/* Hero Section with Video Background */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+.video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: auto;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay to darken video background slightly */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Lapisan gelap di atas video */
+  z-index: 1;
+}
+
+/* Content Section */
+
+/* about  */
+.about-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px; /* Sudut membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  transition: transform 0.3s ease-in-out; /* Efek transisi */
+}
+.about-image:hover {
+  transform: scale(1.05); /* Efek hover */
+}
+/* about  */
+
+.h-about {
+  font-family: "Parkinsans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.p-about {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.card-title {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card-text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+}
+
+.h-gallery {
+  font-family: "Parkinsans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.jadwal-event {
+  font-family: "Parkinsans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.h-tiket {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.lead {
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+}
+
+.content-section {
+  background-color: #f8f9fa;
+}
+
+/* our sponsor */
+.sponsor-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.marquee-container {
+  display: flex;
+  width: fit-content;
+}
+
+.sponsor-track {
+  display: flex;
+  align-items: center;
+}
+
+.sponsor-item {
+  flex: 0 0 auto;
+  margin: 0 15px;
+}
+
+.sponsor-item img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.sponsor-item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* our sponsor */
+
+/* navbar dropdown */
+/* Manual Fix untuk Nama User */
+.user-menu {
+  position: relative;
+  display: flex; /* Gunakan flex untuk penyelarasan */
+  align-items: center; /* Sejajar vertikal */
+}
+
+.user-menu .user-name {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  display: inline-block;
+}
+
+.user-menu:hover .user-name {
+  color: #ccc; /* Efek hover */
+}
+
+/* Dropdown Menu */
+.user-menu .dropdown {
+  position: absolute;
+  top: calc(100% + 5px); /* Tepat di bawah Nama User */
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8); /* Transparan gelap */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.user-menu:hover .dropdown {
+  display: block; /* Tampilkan dropdown saat hover */
+}
+
+.user-menu .dropdown li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  display: block;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.user-menu .dropdown li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* navbar dropdown */
+
+/* Footer Styling */
+.footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.footer .social-media a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.footer .social-media a:hover {
+  color: #007bff;
+}
+
+/* Responsive Video Adjustments mobile dan navbar */
+@media (max-width: 768px) {
+  .video-background {
+    width: auto;
+    height: 100vh; /* Menyesuaikan tinggi video di perangkat kecil */
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column; /* Susun vertikal */
+    align-items: flex-start; /* Pastikan rata kiri */
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar ul li {
+    width: 100%; /* Supaya setiap item memenuhi lebar */
+    margin: 5px 0; /* Beri jarak antar elemen */
+  }
+
+  .navbar ul li a,
+  .btn-logout {
+    text-align: left; /* Pastikan teks rata kiri */
+    padding: 10px 20px; /* Sesuaikan padding */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column; /* Susun vertikal */
+    align-items: flex-start; /* Pastikan rata kiri */
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar ul li {
+    width: 100%; /* Supaya setiap item memenuhi lebar */
+    margin: 5px 0; /* Beri jarak antar elemen */
+  }
+
+  .navbar ul li a,
+  .btn-logout {
+    text-align: left; /* Pastikan teks rata kiri */
+    padding: 10px 20px; /* Sesuaikan padding */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}

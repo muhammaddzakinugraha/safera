@@ -1,0 +1,105 @@
+/* Umum */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #555;
+}
+
+.navigation-buttons {
+  margin-bottom: 20px;
+}
+
+.navigation-buttons a {
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.navigation-buttons a:hover {
+  background-color: #0056b3;
+}
+
+/* Tabel */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+table td {
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #555;
+}
+
+table tr:hover td {
+  background-color: #f1f1f1;
+}
+
+/* Pesan kosong */
+table tbody tr td[colspan] {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+/* Link Aksi */
+table td a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+table td a:hover {
+  color: #0056b3;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  table th,
+  table td {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}

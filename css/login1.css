@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.login-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+.login-logo {
+  width: 180px; /* Sesuaikan ukuran logo */
+  margin-bottom: 2px;
+}
+
+.input-icon {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.forgot-password {
+  color: #4caf50;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.login-btn {
+  background: #191a1a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.signup-link {
+  margin-top: 20px;
+  color: #4a4a4a;
+}
+
+.signup-link a {
+  color: #16b5c7;
+  text-decoration: none;
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.show-password input {
+  margin-right: 5px;
+}
